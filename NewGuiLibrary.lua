@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local VERSION = "4.07 PRIVATE"..(shared.VapePrivate and " PRIVATE" or "")
+	local VERSION = "4.07 GITHUB"..(shared.VapePrivate and " PRIVATE" or "")
 	local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local rainbowvalue = 0
 	local cam = game:GetService("Workspace").CurrentCamera
