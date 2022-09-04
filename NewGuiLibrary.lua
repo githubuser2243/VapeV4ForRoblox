@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local VERSION = "4.08"..(shared.VapePrivate and " PRIVATE" or "")
+	local VERSION = "4.07"..(shared.VapePrivate and " PRIVATE" or "")
 	local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local rainbowvalue = 0
 	local cam = game:GetService("Workspace").CurrentCamera
@@ -6272,7 +6272,7 @@ if shared.VapeExecuted then
 		local frame = Instance.new("Frame")
 		frame.Size = UDim2.new(0, 266, 0, 75)
 		frame.Position = UDim2.new(1, 0, 1, -(150 + 80 * offset))
-		frame.BackgroundTransparency = 1
+		frame.BackgroundTransparency = 0.5
 		frame.BackgroundColor3 = Color3.new(0, 0,0)
 		frame.BorderSizePixel = 0
 		frame.Parent = notificationwindow
@@ -6296,7 +6296,7 @@ if shared.VapeExecuted then
 		frame2:GetPropertyChangedSignal("BackgroundColor3"):Connect(function()
 			frame2.ImageColor3 = frame2.BackgroundColor3
 		end)
-		frame2.BackgroundTransparency = 0.5
+		frame2.BackgroundTransparency = 1
 		frame2.SliceCenter = Rect.new(2, 0, 224, 2)
 		frame2.Size = UDim2.new(1, -61, 0, 2)
 		frame2.ScaleType = Enum.ScaleType.Slice
