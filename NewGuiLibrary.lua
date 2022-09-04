@@ -6267,7 +6267,7 @@ if shared.VapeExecuted then
 		local image = Instance.new("ImageLabel")
 		image.SliceCenter = Rect.new(67, 59, 323, 120)
 		image.Position = UDim2.new(0, -61, 0, -50)
-		image.BackgroundTransparency = 1
+		image.BackgroundTransparency = 0.4
 		image.Name = "Frame"
 		image.ScaleType = Enum.ScaleType.Slice
 		image.Image = getcustomassetfunc("vape/assets/NotificationBackground.png")
