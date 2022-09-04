@@ -6258,7 +6258,7 @@ if shared.VapeExecuted then
 		local frame = Instance.new("Frame")
 		frame.Size = UDim2.new(0, 266, 0, 75)
 		frame.Position = UDim2.new(1, 0, 1, -(150 + 80 * offset))
-		frame.BackgroundTransparency = 1
+		frame.BackgroundTransparency = 0.5
 		frame.BackgroundColor3 = Color3.new(0, 0,0)
 		frame.BorderSizePixel = 0
 		frame.Parent = notificationwindow
