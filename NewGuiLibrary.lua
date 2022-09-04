@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local VERSION = "4.08"..(shared.VapePrivate and " PRIVATE" or "")
+	local VERSION = "4.07"..(shared.VapePrivate and " PRIVATE" or "")
 	local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local rainbowvalue = 0
 	local cam = game:GetService("Workspace").CurrentCamera
@@ -49,7 +49,7 @@ if shared.VapeExecuted then
 			end
 			return readfile("vape/"..scripturl)
 		else
-			local res = game:HttpGet("https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..scripturl, true)
+			local res = game:HttpGet("https://raw.githubusercontent.com/githubuser2243/VapeV4ForRoblox/main/"..scripturl, true)
 			assert(res ~= "404: Not Found", "File not found")
 			return res
 		end
@@ -138,7 +138,7 @@ if shared.VapeExecuted then
 				textlabel:Remove()
 			end)
 			local req = requestfunc({
-				Url = "https://raw.githubusercontent.com/7GrandDadPGN/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
+				Url = "https://raw.githubusercontent.com/githubuser2243/VapeV4ForRoblox/main/"..path:gsub("vape/assets", "assets"),
 				Method = "GET"
 			})
 			writefile(path, req.Body)
