@@ -1,5 +1,5 @@
 if shared.VapeExecuted then
-	local VERSION = "4.07"..(shared.VapePrivate and " PRIVATE" or "")
+	local VERSION = "4.08"..(shared.VapePrivate and " PRIVATE" or "")
 	local customdir = (shared.VapePrivate and "vapeprivate/" or "vape/")
 	local rainbowvalue = 0
 	local cam = game:GetService("Workspace").CurrentCamera
@@ -6272,7 +6272,7 @@ if shared.VapeExecuted then
 		local frame = Instance.new("Frame")
 		frame.Size = UDim2.new(0, 266, 0, 75)
 		frame.Position = UDim2.new(1, 0, 1, -(150 + 80 * offset))
-		frame.BackgroundTransparency = 0.5
+		frame.BackgroundTransparency = 1
 		frame.BackgroundColor3 = Color3.new(0, 0,0)
 		frame.BorderSizePixel = 0
 		frame.Parent = notificationwindow
@@ -6281,7 +6281,7 @@ if shared.VapeExecuted then
 		local image = Instance.new("ImageLabel")
 		image.SliceCenter = Rect.new(67, 59, 323, 120)
 		image.Position = UDim2.new(0, -61, 0, -50)
-		image.BackgroundTransparency = 0.5
+		image.BackgroundTransparency = 0.6
 		image.Name = "Frame"
 		image.ScaleType = Enum.ScaleType.Slice
 		image.Image = getcustomassetfunc("vape/assets/NotificationBackground.png")
